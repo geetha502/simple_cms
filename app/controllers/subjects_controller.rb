@@ -1,4 +1,4 @@
 class SubjectsController < ApplicationController
-  def index1
+  def index
   end
 end
