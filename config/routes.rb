@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
+  get 'subjects/index1'
   get 'home/index'
-  get 'home/home'
-  get 'home/subjects'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
