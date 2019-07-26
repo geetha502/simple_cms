@@ -7,7 +7,6 @@ class CreatePages < ActiveRecord::Migration[5.2]
       t.string 'permalink'
       t.integer 'position'
       t.boolean 'visible'
-
       t.timestamps
     end
   end

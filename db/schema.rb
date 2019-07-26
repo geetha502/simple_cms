@@ -38,10 +38,10 @@ ActiveRecord::Schema.define(version: 2019_07_25_181854) do
     t.string "contact_no"
     t.string "address"
     t.date "dob"
-    t.bigint "Authors_id"
+    t.bigint "author_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["Authors_id"], name: "index_profiles_on_Authors_id"
+    t.index ["author_id"], name: "index_profiles_on_author_id"
   end
 
   create_table "sections", force: :cascade do |t|
