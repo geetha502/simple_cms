@@ -4,8 +4,7 @@ class CreateProfiles < ActiveRecord::Migration[5.2]
       t.string 'contact_no'
       t.string 'address'
       t.date 'dob'
-      t.references 'Authors'
-
+      t.references 'author'
       t.timestamps
     end
   end
