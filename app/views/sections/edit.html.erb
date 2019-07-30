@@ -1,0 +1,57 @@
+<h3> edit sections:   <%= @section.name %> <h3>
+
+  <%= form_for(@section) do |f| %>
+
+    <%  if @section.errors.any? %>
+      <ul>
+          <%= @section.errors.full_messages.each do |msg| %>
+            <li><%= msg %>
+          <% end %>
+      </ul>
+    <% end %>
+
+
+    <div class="form-group">
+      <%= f.label :id%><br>
+      <%= f.number_field :id, class: 'form-control' %>
+    </div>
+
+
+    <div class="form-group">
+      <%= f.label :page_id%><br>
+      <%= f.number_field :page_id, class: 'form-control' %>
+    </div>
+
+
+
+
+  <div class="form-group">
+    <%= f.label :name%><br>
+    <%= f.text_field :name, class: 'form-control' %>
+  </div>
+
+
+    <div class="form-group">
+      <%= f.label :position%><br>
+      <%= f.number_field :position ,class: 'form-control' %>
+    </div>
+
+
+
+   <div class="form-group form-check">
+     <%= f.check_box :visible, class: 'form-check-input' %>
+     <%= f.label :visible%><br>
+   </div><br>
+
+   <div class="form-group">
+     <%= f.label :content_type%><br>
+     <%= f.text_field :content_type, class: 'form-control' %>
+   </div>
+
+   <div class="form-group">
+     <%= f.label :content%><br>
+     <%= f.text_field :content, class: 'form-control' %>
+   </div>
+
+    <%= f.submit "save" , class: 'btn btn-primary' %>
+  <% end %>

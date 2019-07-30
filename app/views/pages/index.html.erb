@@ -1,0 +1,28 @@
+
+<h1>All pages</h1>
+<%= link_to 'add page', new_page_path %>
+<table style="width:50%">
+ <tr>
+   <th>id</th>
+   <th>subject_id</th>
+   <th> permalink</th>
+   <th>name</th>
+   <th>position</th>
+   <th>visible</th>
+ </tr>
+ <% @pages.each do |i| %>
+ <tr>
+     <td> <%= i.id %></td>
+     <td> <%= i.subject.name %></td>
+     <td> <%= i.permalink %></td>
+     <td> <%= i.name %></td>
+     <td> <%= i.position %></td>
+     <td> <%= i.visible %></td>
+     <td><%= link_to 'show', page_path(i) %>
+     <%= link_to 'edit', edit_page_path(i) %>
+     <%= link_to 'delete', page_path(i), method: :delete %>
+    </td>
+
+ </tr>
+ <% end %>
+</table>

@@ -1,0 +1,18 @@
+{print subject name hear}
+<!-- <%= @subject.name %>
+<%= @subject.position %>
+<%= @subject.visible %> -->
+
+
+<table style="width:50%">
+  <tr>
+    <th>id</th>
+    <th>name</th>
+  </tr>
+  <% @subject.pages.each do |i| %>
+    <tr>
+      <td><%= i.id %></td>
+      <td> <%= i.name %></td>
+    </tr>
+  <% end %>
+</table>

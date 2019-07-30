@@ -1,0 +1,36 @@
+
+<h1>All sections</h1>
+
+
+<%= link_to 'sections', new_section_path %>
+  <table style="width:50%">
+    <tr>
+      <th>id</th>
+      <th>page_id</th>
+      <th>name</th>
+      <th>position</th>
+      <th>visible</th>
+      <th>content_type</th>
+      <th>content</th>
+      <th>Action</th>
+
+    </tr>
+    <% @sections.each do |i| %>
+    <tr>
+        <td> <%= i.id %></td>
+        <td> <%= i.page_id %></td>
+        <td> <%= i.name %></td>
+        <td> <%= i.position %></td>
+        <td> <%= i.visible %></td>
+        <td> <%= i.content_type %></td>
+        <td> <%= i.content %></td>
+
+        <td><%= link_to 'show', section_path(i) %>
+        <%= link_to 'edit', edit_section_path(i) %>
+        <%= link_to 'delete', section_path(i), method: :delete %>
+        </td>
+
+    </tr>
+    <% end %>
+
+</table>
