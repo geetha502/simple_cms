@@ -17,7 +17,13 @@
   <td> <%= i.id %></td>
   <td> <%= i.name %></td>
   <td> <%= i.position %></td>
-  <td> <%= i.visible %></td>
+  <!-- <td> <%= i.visible %> -->
+
+  <td>  <%= get_visibility_status(i.visible) %>
+
+
+
+  </td>
   <td><%= link_to 'show', subject_path(i) %>
   <%= link_to 'edit', edit_subject_path(i) %>
   <%= link_to 'delete', subject_path(i), method: :delete %>

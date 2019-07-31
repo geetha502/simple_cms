@@ -16,7 +16,7 @@
      <td> <%= i.subject.name %></td>
      <td> <%= i.permalink %></td>
      <td> <%= i.name %></td>
-     <td> <%= i.position %></td>
+     <td><%= get_visibility_status(i.visible) %> </td>
      <td> <%= i.visible %></td>
      <td><%= link_to 'show', page_path(i) %>
      <%= link_to 'edit', edit_page_path(i) %>
