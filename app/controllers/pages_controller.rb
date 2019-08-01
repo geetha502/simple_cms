@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-
+  before_action :authenticate_admin_user!
     def index
       @pages  = Page.where(["visible = ?", false])
         @pages  = Page.order(:position)

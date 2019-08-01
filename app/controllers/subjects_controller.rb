@@ -1,7 +1,9 @@
 class SubjectsController < ApplicationController
+  before_action :authenticate_admin_user!
   def index
       @subjects  = Subject.where(["visible = ?", false])
       @subjects  = Subject.order(:position)
+
   end
 
   def new

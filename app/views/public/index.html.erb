@@ -1,0 +1,28 @@
+<h1>Public#index</h1>
+
+
+<table style="width:50%">
+<tr>
+   <th>id</th>
+   <th>name</th>
+   <th>position</th>
+   <th>visible</th>
+</tr>
+ <% @subjects.each do |i| %>
+ <tr>
+  <td> <%= i.id %></td>
+  <td> <%= i.name %></td>
+  <td> <%= i.position %></td>
+  <!-- <td> <%= i.visible %> -->
+
+  <td>  <%=i.visible %>
+
+
+
+  </td>
+
+
+ </tr>
+ <% end %>
+
+</table>
