@@ -1,28 +1,53 @@
-<h2>Log in</h2>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field",  background-color= "blue">
-    <%= f.label :email %><br />
+<html>
+  <head>
+  </head>
+  <body>
 
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  
-  </div>
+    <div class="contaner">
+      <div id="wrapper"  >
+        <div class="main-content">
+          <div class="header">
+            <%=  image_tag("ssss.gif") %>
+          </div>
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
 
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+    <h3>log in </h3>
+
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="field">
+        <%= f.label :email %><br /></p>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password %><br />
+        <%= f.password_field :password, autocomplete: "current-password" %>
+      </div>
+
+      <% if devise_mapping.rememberable? %>
+      <div class="field">
+        <%= f.check_box :remember_me %>
+        <%= f.label :remember_me %>
+      </div>
+      <% end %>
+
+      <div class="actions">
+         <%= f.submit "Log in", class: "btn btn-primary"%>
+      </div>
+      <% end %>
+      <div class="borderb"
+      <%= render "devise/shared/links" %>
     </div>
-  <% end %>
+    </div>
+    <div class="sub-content">
+      <div class="s-part">
+        <a href="registrations"></a>
+      </div>
+    </div>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
   </div>
-<% end %>
+  </div>
 
-<%= render "devise/shared/links" %>
+</body>
+</html>

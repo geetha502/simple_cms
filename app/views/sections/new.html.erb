@@ -1,4 +1,4 @@
-<h3> edit sections:   <%= @section.name %> <h3>
+<h3> new sections:   <%= @section.name %> <h3>
 
   <%= form_for(@section) do |f| %>
 
@@ -11,15 +11,15 @@
     <% end %>
 
 
-    <div class="form-group">
+    <!-- <div class="form-group">
       <%= f.label :id%><br>
       <%= f.number_field :id, class: 'form-control' %>
-    </div>
+    </div> -->
 
 
     <div class="form-group">
       <%= f.label :page_id%><br>
-      <%= f.select :page_id, options_for_select(Section.all.map { |e| [e.name, e.id]}), class: 'form-control' %>
+      <%= f.select :page_id, options_for_select(Page.all.map { |e| [e.name, e.id]}), class: 'form-control' %>
 
     </div>
 

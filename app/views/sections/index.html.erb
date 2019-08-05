@@ -1,18 +1,21 @@
 
-<h1>All sections</h1>
+<h3>All sections</h3>
+
 
 
 <%= link_to 'sections', new_section_path %>
-  <table style="width:50%">
+  <table style="width:90%" border="5" bordercolor="blue">
     <tr>
-      <th>id</th>
-      <th>page_id</th>
-      <th>name</th>
-      <th>position</th>
-      <th>visible</th>
-      <th>content_type</th>
-      <th>content</th>
-      <th>Action</th>
+      <thead align="left">
+      <th align= "right">id</th>&emsp;&emsp;
+      <th align= "right">page_id</th>&emsp;&emsp;
+      <th align= "right">name</th>&emsp;&emsp;
+      <th align= "right">position</th>&emsp;&emsp;&emsp;
+      <th align= "right">visible</th>&emsp;&emsp;
+      <th align= "right">content_type</th>&emsp;&emsp;
+      <th align= "right">content</th>
+      <th align= "right">Action</th>
+    </thead>
 
     </tr>
     <% @sections.each do |i| %>

@@ -6,12 +6,13 @@ Rails.application.routes.draw do
   get 'pages/index'
   get 'page/index'
   get 'authors/index'
-  root 'home#index'
+  root 'public#index'
   get 'subjects/index'
   get 'home/index'
   resources :subjects
   resources :pages
   resources :sections
+  resources :public
 
 
 

@@ -1,0 +1,126 @@
+/*
+.col-sm-4 {
+  float: left;
+  width: 300px;
+  padding: 10px;
+  height: 400px;
+  box-shadow: 2px 2px 2px 2px #a3a375
+  border-box: 30px;
+  border: 2px solid white ;
+  margin-top: 150px;
+  margin-left: 50px;
+  margin-bottom: 80px;
+  align-content: center;
+
+
+}
+
+.col-sm-8 {
+  float: left;
+  width: 500px;
+  padding: 10px;
+  height: 400px;
+
+
+  border: 2px solid white ;
+  margin-top: 200px;
+  margin-left: 20px;
+  margin-bottom: 80px;
+
+
+
+}
+
+
+
+.row {
+
+  display: table;
+  clear: both;
+  box-shadow: 2px 2px 2px 2px #a3a375
+  border-box: 5px;
+  border: 2px ;
+    margin-top: 150px;
+
+  padding: 10px;
+  height: 600px;
+  width: 900px;
+  margin-left: 500px;
+  margin-bottom: 100px;
+  margin-right: 100px;
+} */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #eee;
+}
+
+/* #wrapper {
+  width: 500px;
+  height: 50%;
+  overflow: hidden;
+  border: 0px solid #000;
+  margin: 50px auto;
+  padding: 10px;
+} */
+
+.main-content {
+  width: 300px;
+  height: 50%;
+  margin: 10px auto;
+  background-color: #fff;
+  border: 2px solid #e6e6e6;
+  padding: 40px 50px;
+  margin-top: 250px;
+
+
+
+}
+.contaner{
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-size: 100%;
+
+
+}
+.colorborder{
+  border: solid;
+
+}
+
+.header {
+  border: 0px solid #000;
+  margin-bottom: 5px;
+}
+
+.header img {
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  position: relative;
+  left: 40px;
+}
+
+
+
+.overlap-text {
+  position: relative;
+}
+
+
+
+
+
+
+
+input:focus {
+    background-color: yellow;
+}
+
+.form-control{
+  width: 30%;
+}

@@ -8,11 +8,41 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script>
+    </script>
   </head>
 
   <body>
+
     <h1>Simple CMS Bluprint</h1>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="subjects">subjects </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pages">pages</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sections">Sections</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+
+
     <%= yield %>
+
     <%= link_to('logout', destroy_admin_user_session_path, method: :delete) %>
 
     <p class="notice"><%= notice %></p>

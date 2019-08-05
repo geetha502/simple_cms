@@ -1,11 +1,25 @@
 
 
 {print sections data hear}
- <%= @section.id %>
-<%= @section.page_id %>
-<%= @section.name %>
-<%= @section.position %>
-<%= @section.visible %>
-<%= @section.content_type %>
-<%= @section.content %>
-<%= @section.page.name %> 
+ 
+
+<table style="width:50%">
+  <tr>
+    <th>id</th>
+    <th>page_id</th>
+    <th>name</th>
+    <th>position</th>
+    <th>visible</th>
+    <th>content_type</th>
+    <th>content</th>
+
+  </tr>
+
+    <tr>
+      <td> <%= @section.id %> </td>
+       <td> <%= @section.page_id %></td>
+       <td> <%= @section.name %></td>
+       <td>  <%= @section.position %></td>
+       <td> <%= @section.visible %></td>
+       <td> <%= @section.content_type %></td>
+       <td> <%= @section.content %></td>

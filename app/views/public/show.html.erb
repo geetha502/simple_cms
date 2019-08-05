@@ -1,0 +1,5 @@
+<ul><br><br><br>
+<% @subject.pages.each do |i| %>
+  <li><%= link_to i.name, edit_public_path(i), class: "aa" %></li>
+<% end %>
+</ul>

@@ -1,0 +1,13 @@
+<table style="width:50%">
+  <tr>
+    <th> name </th>
+    <th>  content  </th>
+  </tr>
+
+<% @pages.sections.each do |i|  %>
+  <tr>
+  <td><%= i.name %></td>
+  <td><%= i.content %><br></td>
+</tr>
+  <% end %>
+</table>

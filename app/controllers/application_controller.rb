@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
 
+
   before_action :authenticate_admin_user!
   layout :layout_by_resource
 

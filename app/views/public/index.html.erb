@@ -1,28 +1,14 @@
 <h1>Public#index</h1>
 
-
-<table style="width:50%">
-<tr>
-   <th>id</th>
-   <th>name</th>
-   <th>position</th>
-   <th>visible</th>
-</tr>
- <% @subjects.each do |i| %>
- <tr>
-  <td> <%= i.id %></td>
-  <td> <%= i.name %></td>
-  <td> <%= i.position %></td>
-  <!-- <td> <%= i.visible %> -->
-
-  <td>  <%=i.visible %>
+<div class="navbar">
+  <% @subjects.each do |i| %>
+  <%= link_to i.name, public_path(i), class: "aa" %>
+  </li>
+  <% end %>
+  </ul>
+</div>
 
 
 
-  </td>
-
-
- </tr>
- <% end %>
-
-</table>
+<br><br> <br><br><h2 style="text-align: center; color: blue; font-size:40px"> welcome to</h2><br>
+<h2 style="text-align: center; color: blue; font-size:80px"> CMS  </h2>
